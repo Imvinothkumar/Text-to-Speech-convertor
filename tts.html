@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhiteWhispr TTS</title>
+  <link rel="stylesheet" href="tts.css" />
+  <link rel="icon" href="Images/icon.png" type="image/png">
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pptxgenjs/3.5.0/pptxgen.bundle.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🤍 WhiteWhispr TTS</h1>
+  </header>
+
+  <main>
+    <div class="content-container">
+      <section class="preview-box">
+        <h2>📄 File Preview</h2>
+        <div id="filePreview">No file selected</div>
+      </section>
+
+      <section class="text-box">
+        <textarea id="textInput" placeholder="Paste or type your text here..."></textarea>
+
+        <div class="voice-options">
+          <label for="voiceSelect">🎙️ Select Accent:</label>
+          <select id="voiceSelect">
+            <option value="">Default</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button id="speakBtn">🔊 Speak</button>
+          <button id="pauseBtn">⏸️ Pause</button>
+          <button id="resumeBtn">▶️ Resume</button>
+          <button id="stopBtn">🛑 Stop</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="upload-box">
+      <label for="fileUpload">📂 Upload File</label>
+      <input type="file" id="fileUpload" accept=".txt,.html,.docx,.pdf,.pptx,.ppt" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🤍 by Vinoth</p>
+  </footer>
+
+  <script src="tts.js"></script>
+</body>
+</html>
